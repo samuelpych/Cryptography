@@ -14,11 +14,17 @@ To get a character back from this numeric representation, get the character at t
 in the string (using associations[index]).
 MUST ENCRYPT AND DECRYPT 
 """
+key=("What is they key that you want to use?")
+("Enter e to encrypt, d to decrypt, or q to quit: ")
+e=
+d=
+q= print("Goodbye!"
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 char=
 associations.find(char)
 secretmsg=
-key=("What is they key that you want to use?")
+
+
 associations[index]
 """
 must convert characters to numbers and back before actual math
