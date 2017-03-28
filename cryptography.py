@@ -23,7 +23,7 @@ for a in associations:
 elif "d"=
 else "q":
     print("Goodbye!")
-
+key
 char=
 associations.find(char)
 secretmsg=
