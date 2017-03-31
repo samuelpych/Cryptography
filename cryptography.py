@@ -18,16 +18,30 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 key=input("Key: ")
 letter=input("Enter e to encrypt, d to decrypt, or q to quit: ")
 instruction=input("Message: ")
-for a in associations:
-    if "e"=
-elif "d"=
-else "q":
-    print("Goodbye!")
-key
-char=
-associations.find(char)
-secretmsg=
-
+def encrypt(message, key, process):
+     messnum = [associations.find(x) for x in message]
+     keynum = [associations.find(x) for x in key]
+     keynum = keynum*(len(messnum)//len(keynum))+keynum[:len(messnum)%len(keynum)]
+     keynum = [process*x for x in keynum]
+     emess = [sum(x) for x in zip(messnum, keynum)]
+     emess = ''.join([associations[x%len(associations)] for x in emess])
+     print(emess)
+      
+process = "a"
+process = input("Enter e to encrypt, d to decrypt, or q to quit: ")
+if process == "q":
+        print("Goodbye!")
+  while process != "q":
+    if process == "e":
+        message = input("Message: ")
+        key = input("Key: ")
+        encrypt(message, key, 1)
+    elif process == "d":
+        message = input("Message: ")
+        key = input("Key: ")
+        encrypt(message, key, -1)
+    else:
+        print("Did not understand command, try again.")
 
 associations[index]
 """
