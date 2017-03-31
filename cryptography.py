@@ -29,9 +29,8 @@ def encrypt(message, key, process):
       
 process = "a"
 process = input("Enter e to encrypt, d to decrypt, or q to quit: ")
-if process == "q":
         print("Goodbye!")
-  while process != "q":
+while process != "q":
     if process == "e":
         message = input("Message: ")
         key = input("Key: ")
@@ -42,7 +41,8 @@ if process == "q":
         encrypt(message, key, -1)
     else:
         print("Did not understand command, try again.")
-
+if process == "q":
+        print("Goodbye!")
 associations[index]
 """
 must convert characters to numbers and back before actual math
