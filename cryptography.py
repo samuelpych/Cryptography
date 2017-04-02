@@ -69,7 +69,7 @@ while order  not in ["q"]:
     else:
         print("Did not understand command, try again.")
     order=input("Enter e to encrypt, d to decrypt, or q to quit: ")
-if order== "q":
+   if order="q"
         print("Goodbye!")
         
         
