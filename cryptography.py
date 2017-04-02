@@ -1,7 +1,7 @@
 """
 cryptography.py
 Author: Sam
-Credit: none yet
+Credit: Dave Wilson, Earl
 
 Assignment:
 
