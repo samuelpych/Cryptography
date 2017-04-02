@@ -49,7 +49,7 @@ while order  not in ["q"]:
         for a in range(0, len(message)):
             thingy=repeatasoc[ab[a]]
             print(thingy,end="")
-        print(one )
+        print( )
     if order=="d":
         listmsg=input("Message: ")
         message=list(listmsg)
@@ -65,7 +65,7 @@ while order  not in ["q"]:
         for a in range(0, len(message)):
             thingy=repeatasoc[ab[a]]
             print(thingy,end="")
-        print(listmsg )
+        print( )
     else:
         print("Did not understand command, try again.")
     order=input("Enter e to encrypt, d to decrypt, or q to quit: ")
