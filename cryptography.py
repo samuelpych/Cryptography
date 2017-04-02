@@ -66,7 +66,7 @@ while order  not in ["q"]:
             thingy=repeatasoc[ab[a]]
             print(thingy,end="")
         print( )
-    else:
+    if order not in ["e", "d"]:
         print("Did not understand command, try again.")
     order=input("Enter e to encrypt, d to decrypt, or q to quit: ")
 if order=="q":
